@@ -1,0 +1,108 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 9998;
+    display: none;
+}
+
+#quote-form-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px 30px; /* Added padding for consistent spacing */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    max-width: 400px;
+    width: 90%;
+    text-align: center; /* Centered text inside modal */
+}
+
+button#close-quote-popup {
+    width: 10% !important;
+    padding: 0px !important;
+}
+
+#quote-form-popup h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+#quote-form-popup label {
+    display: block;
+    font-size: 0.95rem;
+    margin: 10px 0 5px;
+    color: #555;
+    text-align: left; /* Align labels to the left */
+}
+
+#quote-form-popup input,
+#quote-form-popup textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; /* Increased margin for spacing */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#quote-form-popup textarea {
+    resize: none; /* Prevent resizing for consistent layout */
+}
+
+#quote-form-popup button {
+    width: 100%;
+    display: block;
+    padding: 12px;
+    background-color: #007BFF; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#quote-form-popup button:hover {
+    background-color: #0056b3;
+}
+
+#close-quote-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #f44336; /* Red close button */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#close-quote-popup:hover {
+    background: #d32f2f;
+}
+
+#contact-info-step,
+#quotation-form-step {
+    text-align: left; /* Align input steps content to the left */
+}
+
+#contact-info-step button,
+#quotation-form-step button {
+    margin-top: 10px; /* Add spacing above buttons */
+}
